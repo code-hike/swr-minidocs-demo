@@ -11,6 +11,16 @@ export { Demo }
 function Demo() {
   return (
     <div className={s.page}>
+      <style global jsx>{`
+        html,
+        body {
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      `}</style>
       <Header />
       <Walkthrough />
       <Footer />
